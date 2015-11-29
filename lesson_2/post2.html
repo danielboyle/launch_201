@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Blog Post 2</title>
+		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
 	  <header>
@@ -14,19 +15,73 @@
   			</ul>
   		</nav>
   	</header>
-  	
+
 		<main>
-			<article>
-  			<header>
-  				<h2>My Second Post</h2>
-					<p>Created by Joe Lindt on <time datetime="2015-11-30">Nov. 30, 2015</time></p>
-  			</header>
+			<div id="posts">
+				<article>
+	  			<header>
+	  				<h2>My Second Post</h2>
+						<p>Created by Joe Lindt on <time datetime="2015-11-30">Nov. 30, 2015</time></p>
+	  			</header>
 
-  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus doloribus et mollitia atque quam consequatur qui, sunt inventore. Ratione quia minima nam distinctio illum, temporibus et minus aspernatur tempore maxime.</p>
+	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus doloribus et mollitia atque quam consequatur qui, sunt inventore. Ratione quia minima nam distinctio illum, temporibus et minus aspernatur tempore maxime.</p>
 
-  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quos eos rem animi non nihil facilis. Veritatis architecto aspernatur ab, magnam culpa asperiores saepe nisi aperiam repudiandae. Est autem, sint.</p>
+	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quos eos rem animi non nihil facilis. Veritatis architecto aspernatur ab, magnam culpa asperiores saepe nisi aperiam repudiandae. Est autem, sint.</p>
 
-			</article>
+				</article>
+			</div>
+
+			<div id="sidebar">
+				<h3>Tags</h3>
+				<ul>
+					<li><a href="#">HTML</a></li>
+					<li><a href="#">CSS</a></li>
+					<li><a href="#">Design</a></li>
+					<li><a href="#">Development</a></li>
+					<li><a href="#">Javascript</a></li>
+					<li><a href="#">jQuery</a></li>
+				</ul>
+				<h3>Archives</h3>
+				<ul>
+					<li>
+						<h4>2015</h4>
+						<ul>
+							<li><a href="#">January</a></li>
+						</ul>
+					</li>
+					<li>
+						<h4>2014</h4>
+						<ul>
+							<li><a href="#">February</a></li>
+							<li><a href="#">June</a></li>
+							<li><a href="#">July</a></li>
+							<li><a href="#">September</a></li>
+							<li><a href="#">November</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<form action="" method="get">
+					<h3>Search</h3>
+					<fieldset>
+						<label for="query">Search terms</label>
+						<input type="search" id="query" name="query"/>
+						<input type="submit" value="Search" />
+					</fieldset>
+				</form>
+
+				<h3>Find Me Elsewhere</h3>
+				<ul>
+					<li><a href="#" class="facebook">Facebook</a></li>
+					<li><a href="#" class="twitter">Twitter</a></li>
+					<li><a href="#" class="linkedin">LinkedIn</a></li>
+					<li><a href="#" class="instagram">Instagram</a></li>
+				</ul>
+			</div>
 		</main>
+
+    <footer>
+    	<p>&copy; 2015 Joe Lindt</p>
+    </footer>
 	</body>
 </html>

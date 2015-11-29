@@ -1,0 +1,189 @@
+/* Blog Styles */
+
+body {
+	color: #333333;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h1, h2 {
+	font-family: Georgia, serif;
+}
+
+h1, h2, p {
+	padding: 15px 0 15px 0;
+	margin: 15px 0 15px 0;
+}
+
+h2, p {
+	padding: 0 0 15px 0;
+	margin: 0;
+}
+
+article header {
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid #cccccc;
+}
+
+time {
+	font-variant: small-caps;
+}
+
+nav a {
+	display: block;
+	color: #0066cc;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+nav li {
+	display: inline-block;
+	width: 200px;
+	background: #ececec;
+	text-align: center;
+}
+
+ul {
+	padding: 0;
+}
+
+blockquote {
+	padding: 15px 0 0 20px;
+	margin: 0 0 20px 20px;
+	font-style: italic;
+	font-size: 1.14em;
+	border-left: 4px solid #ececec;
+	line-height: 150%;
+}
+
+article {
+	padding: 0 0 20px 0;
+}
+
+body > header,
+main,
+body > footer {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+figure {
+	margin: 0 0 20px 0;
+}
+
+figure img {
+	display: block;
+	width: 100%;
+}
+
+figcaption {
+	padding: 10px;
+	border: 1px solid rgb(204, 204, 204);
+	border-top: none;
+	font-style: italic;
+}
+
+a.facebook {
+	padding-left: 20px;
+	background: #f0f099 url("social_facebook.png") 0 0 / 16px no-repeat;
+}
+
+#posts {
+	width: 77%;
+	margin-right: 3%;
+	float: left;
+}
+
+/* Sidebar Styles */
+
+fieldset {
+	border: none;
+}
+
+label {
+	display: block;
+}
+
+label, input {
+	margin: 0 0 10px 0;
+}
+
+#sidebar {
+	width: 20%;
+	float: right;
+}
+
+#sidebar ul {
+	padding-left: 1.2em;
+}
+
+#sidebar > ul:first-of-type {
+	text-align: center;
+}
+
+#sidebar > ul:first-of-type li {
+	display: inline;
+	padding: 0 5px;
+	line-height: 150%;
+}
+
+#sidebar > ul:last-of-type a {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url("social_media_sprite.png") 0 0 no-repeat;
+	text-indent: -9999px;
+}
+
+#sidebar > ul:last-of-type li {
+	display: inline-block;
+}
+
+#sidebar > ul:last-of-type a.twitter {
+  background-position: 33% 0;
+}
+
+#sidebar > ul:last-of-type a.linkedin {
+  background-position: 66% 0;
+}
+
+#sidebar > ul:last-of-type a.instagram {
+  background-position: 100% 0;
+}
+
+#sidebar > ul:last-of-type li {
+  float: left;
+}
+
+/* Footer Styles */
+
+footer {
+	padding: 15px;
+	font-size: .85em;
+	color: #acacac;
+	background: #181818;
+	clear: both;
+}
+
+footer p {
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+

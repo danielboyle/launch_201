@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Blog Post 1</title>
+		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
 	  <header>
@@ -16,27 +17,86 @@
   	</header>
 
 		<main>
-			<article>
-	      <header>
-	        <h2>My First Post</h2>
-	        <p>Created by Joe Lindt on <time datetime="2014-12-31">Dec. 31, 2014</time></p>
-	      </header>
-	  
-	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero atque officia, iusto officiis molestiae distinctio. Illum, dicta quisquam nihil eius laboriosam voluptatem voluptatum enim maxime, possimus labore dolorem saepe iure.</p>
-	  
-	      <blockquote cite="Ryusui">
-	        <p>In all this cool
-	        <br />
-	        is the moon also sleeping?
-	        <br />
-	        There, in the pool?</p>
-	        <p>
-	          <small>- Ryusui</small>
-	        </p>
-	      </blockquote>
-	  
-	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, blanditiis. Cumque molestiae dolore est ullam laudantium perspiciatis nulla quasi ea sunt! Voluptatibus aperiam animi, totam assumenda reprehenderit, nisi eius dolores.</p>
-	    </article>
+			<div id="posts">
+				<article>
+		      <header>
+		        <h2>My First Post</h2>
+		        <p>Created by Joe Lindt on <time datetime="2014-12-31">Dec. 31, 2014</time></p>
+		      </header>
+		  
+		  		<figure>
+		  			<img src="sunset.jpg" alt="Sunset over the forest">
+		  			<figcaption>Sunset over the forest</figcaption>
+		  		</figure>
+
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero atque officia, iusto officiis molestiae distinctio. Illum, dicta quisquam nihil eius laboriosam voluptatem voluptatum enim maxime, possimus labore dolorem saepe iure.</p>
+		  
+		      <blockquote cite="Ryusui">
+		        <p>In all this cool
+		        <br />
+		        is the moon also sleeping?
+		        <br />
+		        There, in the pool?</p>
+		        <p>
+		          <small>- Ryusui</small>
+		        </p>
+		      </blockquote>
+		  
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, blanditiis. Cumque molestiae dolore est ullam laudantium perspiciatis nulla quasi ea sunt! Voluptatibus aperiam animi, totam assumenda reprehenderit, nisi eius dolores.</p>
+		    </article>
+		  </div>
+
+	    <div id="sidebar">
+				<h3>Tags</h3>
+				<ul>
+					<li><a href="#">HTML</a></li>
+					<li><a href="#">CSS</a></li>
+					<li><a href="#">Design</a></li>
+					<li><a href="#">Development</a></li>
+					<li><a href="#">Javascript</a></li>
+					<li><a href="#">jQuery</a></li>
+				</ul>
+				<h3>Archives</h3>
+				<ul>
+					<li>
+						<h4>2015</h4>
+						<ul>
+							<li><a href="#">January</a></li>
+						</ul>
+					</li>
+					<li>
+						<h4>2014</h4>
+						<ul>
+							<li><a href="#">February</a></li>
+							<li><a href="#">June</a></li>
+							<li><a href="#">July</a></li>
+							<li><a href="#">September</a></li>
+							<li><a href="#">November</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<form action="" method="get">
+					<h3>Search</h3>
+					<fieldset>
+						<label for="query">Search terms</label>
+						<input type="search" id="query" name="query"/>
+						<input type="submit" value="Search" />
+					</fieldset>
+				</form>
+
+				<h3>Find Me Elsewhere</h3>
+				<ul>
+					<li><a href="#" class="facebook">Facebook</a></li>
+					<li><a href="#" class="twitter">Twitter</a></li>
+					<li><a href="#" class="linkedin">LinkedIn</a></li>
+					<li><a href="#" class="instagram">Instagram</a></li>
+				</ul>
+			</div>
 		</main>
+
+    <footer>
+    	<p>&copy; 2015 Joe Lindt</p>
+    </footer>
 	</body>
 </html>
