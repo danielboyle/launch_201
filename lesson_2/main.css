@@ -177,9 +177,40 @@ footer p {
 	padding: 0;
 }
 
+/* Login/Logout */
 
+#login_message {
+	padding: 15px 20px;
+	font: bold 12px Helvetica, Arial, sans-serif;
+	text-align: center;
+	color: #339933;
+	border: 2px solid #339933;
+	border-radius: 6px;
+	background: #c0f0c0;
+	margin-bottom: 15px;
+	position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 1;
+  transition: top 200ms 2s linear;
+}
 
+#login_message.hide {
+	top: -80px;
+}
 
+#logout {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
+body > header {
+	position: relative;
+}
 
 
 

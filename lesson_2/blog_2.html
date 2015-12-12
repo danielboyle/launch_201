@@ -14,6 +14,8 @@
   				<li><a href="contact.html">Contact Me</a></li>
   			</ul>
   		</nav>
+      <a href="#" id="logout">Log out</a>
+      <p id="login_message">You are now logged in!</p>
   	</header>
 
   	<main>
@@ -108,5 +110,11 @@
     <footer>
     	<p>&copy; 2015 Joe Lindt</p>
     </footer>
+
+    <script>
+      setTimeout(function() {
+        document.querySelector("#login_message").className = "hide";
+      }, 30);
+    </script>
   </body>
 </html>
