@@ -1,0 +1,283 @@
+@import url("whitespace_reset.css");
+
+/*===============================================================*/
+/*===================== Page Styles =============================*/
+/*===============================================================*/
+
+body {
+  font: normal 20px "Avenir", Helvetica, Arial, sans-serif;
+  padding: 135px 0 0 0;
+  background: #2f2840 url("images/bg_body.gif") 50% 0 repeat;
+  color: #45494d;
+  text-align: center;
+}
+
+/*===============================================================*/
+/*======================= Header Styles =========================*/
+/*===============================================================*/
+
+header h1 {
+  padding: 0 0 100px 0;
+}
+
+header h1 a {
+  display: inline-block;
+  width: 298px;
+  height: 243px;
+  text-indent: -9999px;
+  background: transparent url("images/logo.png") 0 0 no-repeat;
+}
+
+nav {
+  font-size: 26px;
+  text-transform: uppercase;
+  padding: 0 0 40px 0;
+}
+
+nav li {
+  display: inline;
+  padding: 0 42px;
+}
+
+nav a {
+  color: #cacaca;
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #6db9ff;
+}
+
+/*===============================================================*/
+/*====================== Main Styles ============================*/
+/*===============================================================*/
+
+main {
+  background: #ffffff;
+  padding: 100px 0 0 0;
+}
+
+.column {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main h2 {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0 0 30px 0;
+}
+
+main h2:before,
+main h2:after {
+  display: inline-block;
+  padding: 0 24px;
+  font-size: 22px;
+  content: "\2022";
+  vertical-align: middle;
+}
+
+main h3 {
+  font-size: 24px;
+  color: #3e59b2;
+  padding: 0 110px 20px 110px;
+}
+
+article {
+  padding: 0 0 100px 0;
+}
+
+article p {
+  padding: 0 110px;
+}
+
+/* =========== Projects Page =========== */
+
+#projects figure {
+  padding: 0 0 45px 0;
+}
+
+#projects figure img {
+  display: block;
+  width: 100%;
+}
+
+#projects p {
+  padding-bottom: 50px;
+}
+
+/* =========== Team Page =========== */
+
+#team p {
+  padding: 0 120px 120px 120px;
+}
+
+#team ul {
+  padding: 0 0 225px 0;
+}
+
+#team li {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 24px;
+}
+
+#team li a {
+  text-decoration: none;
+  color: #3e59b2;
+}
+
+#team li img {
+  display: block;
+  margin: 0 0 25px 0;
+}
+
+/*===============================================================*/
+/*==================== Footer Styles ============================*/
+/*===============================================================*/
+
+footer {
+  color: #b2b2b2;
+  background: #e7e7e7;
+  padding: 80px 0;
+}
+
+footer p {
+  padding: 0 110px 35px 110px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 62px;
+}
+
+footer li a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
+}
+
+footer li a.facebook { background-position: 0 -46px; }
+footer li a.email { background-position: 0 -92px; }
+footer li a.instagram { background-position: 0 100%; }
+
+/*===============================================================*/
+/*==================== Media Queries ============================*/
+/*===============================================================*/
+
+@media (max-width: 875px) {
+  #team li {
+    width: 48%;
+    padding: 0 0 30px 0;
+  }
+
+  #team li img {
+    margin: 0 auto 25px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 65px;
+  }
+
+  header h1 a {
+    width: 223px;
+    height: 182px;
+    background-size: cover;
+  }
+
+  nav {
+    padding-bottom: 20px;
+  }
+
+  main {
+    padding-top: 70px;
+  }
+
+  article {
+    padding-bottom: 50px;
+  }
+
+  article p,
+  #team p {
+    text-align: justify;
+    padding: 0 40px 50px 40px;
+  }
+
+  main h3 {
+    padding: 0 40px 50px 40px;
+  }
+
+  footer {
+    padding: 35px 0;
+  }
+
+  footer li {
+    padding: 0 32px;
+  }
+
+  footer p {
+    padding: 0 40px 35px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 0;
+    font-size: 16px;
+  }
+
+  header {
+    padding: 20px 15px;
+  }
+
+  header h1 {
+    float: left;
+    margin: 20px 0 0 0;
+    font-size: 20px;
+  }
+
+  header h1 a {
+    width: auto;
+    height: 40px;
+    padding: 10px 0 0 55px;
+    text-indent: 0;
+    color: #ffffff;
+    background-position: -20px 0;
+    background-size: 90px auto;
+    text-decoration: none;
+  }
+
+  nav {
+    text-align: right;
+    padding-bottom: 0;
+  }
+
+  nav li {
+    display: block;
+    padding: 5px 0;
+    font-size: 16px;
+  }
+
+  main h2 {
+    font-size: 26px;
+  }
+
+  main h3 {
+    font-size: 20px;
+  }
+
+  footer li {
+    padding: 0 18px;
+  }
+}
+
+
+
+
+
