@@ -2,9 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blog | Post</title>
+  <title>Blog Title | Post</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  
+  <header>
+    <h1><a href="index.html">Blog Title</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="content">
+      <article>
+        <header>
+          <h2><a href="post.html">Post Headline</a></h2>
+          <p>Written by <a href="#">Shane Riley</a> on <time datetime="2014-02-15">Feb. 15, 2014</time></p>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptates dicta exercitationem aliquam, dignissimos ipsam mollitia a iusto voluptas! Illum incidunt dolorum, praesentium reiciendis earum nesciunt impedit magnam consequatur blanditiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur odio fugit, soluta ut maxime. Perspiciatis possimus soluta velit, voluptates dolores porro necessitatibus vel facere, consectetur neque eaque qui adipisci non.
+        </p>
+      </article>
+
+      <section class="comments">
+        <h2>Comments</h2>
+        <article>
+          <header>
+            <img src="http://placehold.it/40x40" alt="Bio pic">
+            <h3>
+              <a href="#">Kevin</a>
+              on
+              <time datetime="2014-02-15">Feb. 15, 2014</time>
+            </h3>
+          </header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, dolor nemo fugiat expedita temporibus earum harum ex. Natus laborum sequi ratione consequuntur! Neque obcaecati eos, totam magnam porro, architecto iure?</p>
+        </article>
+
+        <article>
+          <header>
+            <img src="http://placehold.it/40x40" alt="Bio pic">
+            <h3>
+              <a href="#">Chris</a>
+              on
+              <time datetime="2014-02-15">Feb. 15, 2014</time>
+            </h3>
+          </header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, dolor nemo fugiat expedita temporibus earum harum ex. Natus laborum sequi ratione consequuntur! Neque obcaecati eos, totam magnam porro, architecto iure?</p>
+        </article>
+      </section>
+      
+      <form action="" method="post">
+        <h2>Post Comments</h2>
+        <fieldset>
+          <dl>
+            <dt><label for="name">Your Name</label></dt>
+            <dd>
+              <input type="text" name="name" id="name">
+            </dd>
+            <dt><label for="email">Email Address</label></dt>
+            <dd>
+              <input type="email" name="email" id="email" placeholder="name@website.com">
+            </dd>
+            <dt><label for="comment">Comment</label></dt>
+            <dd>
+              <textarea name="comment" id="comment" cols="80" rows="6"></textarea>
+            </dd>
+          </dl>
+          <input type="submit" value="Submit" class="button">
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="sidebar">
+      <div class="block">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum optio voluptates ratione quos, et dolore iusto vitae esse nobis, ullam laudantium ea aut, illum deserunt sapiente minima quo eos nihil.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2014 Blog Title</p>
+  </footer>
 </body>
 </html>
